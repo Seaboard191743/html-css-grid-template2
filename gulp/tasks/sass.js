@@ -3,7 +3,7 @@ module.exports = function() {
         return $.gulp.src('./src/scss/style.scss')
             .pipe($.sourcemaps.init())
             .pipe($.sass().on('error', $.sass.logError))
-            .pipe($.autoprefixer())
+            .pipe($.autoprefixer({ grid: 'autoplace' }))
             .on("error", $.notify.onError({
                 message: "Error: <%= error.message %>",
                 title: "Error occured"
