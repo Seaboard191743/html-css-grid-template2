@@ -1,0 +1,33 @@
+
+.container__offer--gtc {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+.infographic {
+    align-self: start;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    &__caption {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: $textColorDescription;
+        font-weight: 800;
+        padding: 15px;
+    }
+}
+.infographic-elem {
+    width: 100px;
+    height: 100px;
+    border: 3px solid $turquoise;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    &__inner {
+        font-size: 2em;
+        font-weight: 800;
+        color: #fff;
+        &--fs {
+            font-size: 16px;
+        }
+    }
+}

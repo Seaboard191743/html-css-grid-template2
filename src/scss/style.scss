@@ -1,0 +1,52 @@
+@import "variables";
+@import "header";
+@import "section1";
+@import "section2";
+@import "section3";
+@import "section4";
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    outline-offset: none;
+    box-sizing: border-box;
+}
+html {
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+}
+a {
+    text-decoration: none;
+    transition: all .3s;
+}
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+button {
+    cursor: pointer;
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+}
+
+
+@media all and (max-width: 520px) {
+    .offer-heading__text {
+        font-size: 1.5em;
+    }
+    .offer-heading__shape {
+        display: none;
+    }
+    .container__offer, .container__services {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+    .service {
+        grid-template-columns: 1fr fr;
+        
+        }
+}

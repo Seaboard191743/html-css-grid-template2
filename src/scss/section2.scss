@@ -1,0 +1,42 @@
+
+.offer {
+    &--bg {
+        background: #383838;
+        overflow: hidden;
+    }
+}
+.info-block {
+    &__item {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        margin-bottom: 50px;
+        gap: 10px;
+    }
+}
+
+.info-description--color {
+    color: #fff;
+    margin-bottom: 15px;
+}
+.mockup {
+    grid-column: 2 / -1;
+    position: relative;
+    top: 15vh;
+}
+
+
+
+
+@media all and (max-width: 968px) {
+    .container__offer--media {
+        grid-template-columns: 1fr;
+    }
+    .info-block {
+        grid-column: 1 / -1;
+        align-self: center;
+    }
+    .mockup {
+        grid-column: 1/ -1;
+        justify-self: center;
+    }
+}
